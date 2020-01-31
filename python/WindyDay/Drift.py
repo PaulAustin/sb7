@@ -1,5 +1,5 @@
 # Make a box drift across the screen
-# 
+# SDG
 
 from turtle import Turtle, Screen
 import math
