@@ -41,10 +41,10 @@ class Bubble:
 colors = ['red', 'blue', 'green', 'orange', 'purple', 'black', 'plum']
 bubbles = []
 
-def throwPaper(x, y):
+def blowBubble(x, y):
     color = random.choice(colors)
     b = Bubble(x, y, color)
-    b.bump(10,15)
+    b.bump(random.randint(0,14)-7, random.randint(0,14)-7)
     bubbles.append(b)
 
 def tictoc():
@@ -54,6 +54,6 @@ def tictoc():
         b.sim()
     ocean.ontimer(tictoc, 20)
 
-ocean.onclick(throwPaper)
+ocean.onclick(blowBubble)
 ocean.ontimer(tictoc, 20)
 

@@ -11,6 +11,7 @@ ocean.setup(800, 800)
 ocean.tracer(0)
 
 class Bubble:
+    # Special name for the very first method called __init__=
     def __init__(self, x, y, color):
 
         # Set location and direction
@@ -25,6 +26,7 @@ class Bubble:
         self.turtle.up()
         self.turtle.goto(self.x, self.y)
 
+    # A method to simulate the passage of time
     def sim(self):
         self.turtle.goto(self.x, self.y)
         self.turtle.down()
@@ -35,14 +37,16 @@ class Bubble:
         self.checkWalls()
 
     def randomBump(self):
-        dx = (random.randint(0, 7)-3) * 10
-        dy = (random.randint(0, 7)-3) * 10
+        dx = (random.randint(0, 7)-3) * 8
+        dy = (random.randint(0, 7)-3) * 8
         self.bump(dx, dy)
 
     def bump(self, dx, dy):
         self.dx = dx
         self.dy = dy
 
+    # Keep the bubble on the pond.
+    # How could you make it a circular?
     def checkWalls(self):
         if ((self.x > 300) or (self.x < -300)):
             self.dx *= -1
