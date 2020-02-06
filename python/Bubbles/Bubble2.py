@@ -37,10 +37,9 @@ class Bubble:
         self.dx = dx
         self.dy = dy
 
-    def checkWalls(self):
+   #  def checkWalls(self):
         # if ((bx > 300) or (bx < -300)):
         #    dx = -dx
-
         # if ((by > 300) or (by < -300)):
         #    dy = -dy
 
