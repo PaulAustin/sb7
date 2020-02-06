@@ -20,11 +20,11 @@ class Bubble:
         self.dx = 0
         self.dy = 0
 
-        # Make our own turtle for drawing
+        # Make our own 'private' turtle for drawing
         self.turtle = Turtle()
         self.turtle.color(color)
         self.turtle.up()
-        self.turtle.goto(self.x, y)
+        self.turtle.goto(self.x, self.y)
 
     # A method to simulate the passage of time
     def sim(self):
@@ -42,6 +42,7 @@ def blowBubble(x, y):
     b = Bubble(x, y, color)
     # Make it show at least once
     b.sim()
+    # what happens to 'b'?
 
 def tictoc():
     # What to add here?

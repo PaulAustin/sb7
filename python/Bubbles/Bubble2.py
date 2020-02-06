@@ -19,7 +19,7 @@ class Bubble:
         self.dx = 0
         self.dy = 0
 
-        # Make our own turtle fro drawing
+        # Make our own 'private' turtle for drawing
         self.turtle = Turtle()
         self.turtle.color(color)
         self.turtle.up()
