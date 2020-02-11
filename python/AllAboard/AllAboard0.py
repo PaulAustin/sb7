@@ -8,4 +8,3 @@ import sys
 
 print ("Vector of arguements List:", sys.argv)
 print ("Number of arguments passed:", len(sys.argv))
-
