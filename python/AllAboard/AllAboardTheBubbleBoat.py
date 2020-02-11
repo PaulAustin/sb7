@@ -88,7 +88,6 @@ def blowBubble(x, y):
     b = Bubble(x, y, color1, color2)
     b.randomBump()
     bubbles.append(b)
-    print('Number of bubbles', len(bubbles))
 
 def tictoc():
     # Simulate the passage of time for each bubbble
@@ -97,12 +96,13 @@ def tictoc():
     ocean.update()
     ocean.ontimer(tictoc, 20)
 
-
+# Create the initial set of bubbles
 for i in range(numBubbles):
     blowBubble(random.randint(-50,50), random.randint(-50,50))
 
 ocean.onclick(blowBubble)
 ocean.ontimer(tictoc, 20)
 
-# ocean.mainloop()
+# What happens if the line below is missing
+ocean.mainloop()
 
