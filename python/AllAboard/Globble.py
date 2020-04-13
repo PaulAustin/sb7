@@ -11,7 +11,7 @@ lake.bgcolor('lightblue')
 mypen = turtle.Turtle()
 mypen.speed(9)
 mypen.penup()
-mypen.setposition(-300,-300)
+mypen.setposition(-300, -300)
 mypen.pendown()
 mypen.pensize(8)
 for side in range(4):
@@ -30,7 +30,7 @@ player.speed(0)
 goal = turtle.Turtle()
 player.shape('circle')
 goal.penup()
-goal.setposition(-200,200)
+goal.setposition(-200, 200)
 
 speed = 0
 
@@ -51,7 +51,7 @@ def downspeed():
 def isCollision(t1, t2):
     dx = t1.xcor() - t2.xcor()
     dy = t1.xcor() - t2.xcor()
-    d = math.sqrt(math.pow(dx,2) + math.pow(dy,2))
+    d = math.sqrt(dx*dx + dy*dy)
     # More work to do here
 
 lake.listen()
