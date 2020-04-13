@@ -52,13 +52,13 @@ def isCollision(t1, t2):
     dx = t1.xcor() - t2.xcor()
     dy = t1.xcor() - t2.xcor()
     d = math.sqrt(math.pow(dx,2) + math.pow(dy,2))
+    # More work to do here
 
-turtle.listen()
-turtle.onkey(turnleft,"Left")
-turtle.onkey(turnright, "Right")
-turtle.onkey(increasespeed, "Up")
-turtle.onkey(downspeed, "Down")
-
+lake.listen()
+lake.onkey(turnleft,"Left")
+lake.onkey(turnright, "Right")
+lake.onkey(increasespeed, "Up")
+lake.onkey(downspeed, "Down")
 
 while True:
     player.forward(speed)
