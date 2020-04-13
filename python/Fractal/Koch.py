@@ -16,8 +16,11 @@ t = turtle.Turtle()
 t.speed(0); t.width(2); t.color('blue','cyan')
 t.penup(); t.goto(-150,-100); t.pendown()
 
-t.begin_fill()
-for i in range(3):
-    Koch(300, 3)
-    t.left(120)
-t.end_fill()
+def main():
+    t.begin_fill()
+    for _ in range(3):
+        Koch(300, 3)
+        t.left(120)
+    t.end_fill()
+
+main()

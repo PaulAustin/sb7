@@ -36,6 +36,6 @@ t.pendown()
 
 t.color('blue','cyan')
 t.begin_fill()
-sierpinski(500, 1)
+sierpinski(500, 5)
 t.end_fill()
 t.mainloop()
